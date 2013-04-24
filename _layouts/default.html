@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://yui.yahooapis.com/3.10.0/build/cssreset/cssreset-min.css" media="all">
+<style media="all">
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6,b,strong {
+  font-weight: bold;
+}
+i,em {
+  font-style: italic;
+}
+li {
+  list-style-type: square;
+  margin-left: 5%;
+  margin-top: .5em;
+}
+ol li { list-style-type: decimal; }
+h2,h3,h4,h5,h6,p,ul,ol,table { margin-bottom: 1em; }
+tr { vertical-align: top; }
+</style>
+<style media="screen">
+#page { margin: 5%; }
+html {
+  font-size: 18px;
+  line-height: 24px;
+}
+table {
+  width: 50%;
+}
+td { width: 50%; }
+tr,h2 { border-bottom: 1px solid black; }
+td { padding: 6px 0 6px 0; }
+
+
+</style>
+<style media="print">
+#page { margin: 3%; }
+html {
+  font-size: 11pt;
+  line-height: 14pt;
+}
+tr,h2 { border-bottom: 1pt solid black; }
+table {
+  width: 100%;
+}
+td {
+  width: 50%;
+  padding: 2pt 0 2pt 0;
+}
+
+</style>
+</head>
+<body>
+  <div id="page">
+    {{ content }}
+  </div>
+</body>
+</html>
